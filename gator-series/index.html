@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gator Howling Moon — Series Preview</title>
+<style>
+:root{--fg:#0a0a0a;--muted:#666;--ac:#3ae870;--bd:#ccc;--card:#fff}
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f4f4f4;color:var(--fg);padding:16px;line-height:1.45}
+header{border-bottom:2px solid var(--ac);padding-bottom:12px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+h1{font-size:1.2rem;letter-spacing:0.08em;text-transform:uppercase}
+.sub{font-size:0.85rem;color:var(--muted)}
+.section-title{font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;margin:24px 0 12px;color:var(--muted);border-bottom:1px solid var(--bd);padding-bottom:6px}
+
+/* Landing page — explorer box + gator image */
+.explorer-box{border:2px solid #000;background:#000;color:#0f0;margin-bottom:24px;font-family:'Courier New',monospace}
+.explorer-titlebar{background:#333;color:#0f0;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;font-weight:bold}
+.explorer-toolbar{padding:12px;display:flex;gap:8px;align-items:center}
+.explorer-prompt{color:#0f0}
+.explorer-input{border:1px solid #0f0;background:#000;color:#0f0;padding:6px 8px;width:260px;font-family:inherit}
+.explorer-btn{background:#0f0;color:#000;border:none;padding:6px 12px;font-family:inherit;font-weight:bold;cursor:pointer}
+.explorer-status{padding:6px 12px;font-size:0.85rem;border-top:1px solid #333;color:#0f0}
+.gator-image-section{margin-bottom:24px;text-align:center}
+.gator-link{display:inline-block;border:3px solid var(--ac);border-radius:8px;overflow:hidden;transition:transform 0.2s}
+.gator-link:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(58,232,112,0.35)}
+.gator-link img{display:block;width:100%;max-width:560px;height:auto}
+.gator-caption{margin-top:10px;font-size:0.95rem;color:var(--muted)}
+
+/* Series page — image at top + products below */
+.page-header{text-align:center;margin-bottom:24px}
+.page-header img{max-width:700px;width:100%;border-radius:8px;border:2px solid var(--ac)}
+.page-caption{margin-top:10px;font-size:0.95rem;color:var(--muted)}
+.product-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:560px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.product-grid{grid-template-columns:repeat(3,1fr)}}
+.product-card{background:var(--card);border:1px solid var(--bd);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.product-card img.product-img{width:100%;height:220px;object-fit:cover;background:#eee}
+.product-body{padding:12px;flex:1;display:flex;flex-direction:column}
+.product-card h3{font-size:0.95rem;margin-bottom:6px;line-height:1.25}
+.product-price{font-size:1rem;font-weight:bold;margin-bottom:8px;color:var(--fg)}
+.product-desc{font-size:0.8rem;color:var(--muted);margin-bottom:8px;flex:1}
+.variant-chip{display:inline-block;background:#f0f0f0;color:#333;padding:2px 6px;border-radius:4px;font-size:0.7rem;margin-right:4px;margin-bottom:4px}
+.cta{margin-top:10px;padding:8px 14px;background:#000;color:#fff;border:none;border-radius:6px;font-size:0.85rem;cursor:pointer;width:100%}
+.cta:hover{background:#333}
+
+/* App frame styling */
+.approval-box{margin-top:30px;padding:14px;background:#fff;border:1px solid var(--bd);border-radius:8px}
+.approval-box h4{margin-bottom:8px;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
+.approval-box p{font-size:0.85rem;color:var(--muted);margin-bottom:10px}
+button.approve{background:var(--ac);color:#000;border:none;padding:10px 18px;border-radius:6px;font-weight:bold;cursor:pointer;margin-right:8px}
+button.approve:hover{opacity:0.9}
+button.rework{background:#fff;color:#d00;border:1px solid #d00;padding:10px 18px;border-radius:6px;cursor:pointer;margin-right:8px}
+button.rework:hover{background:#fee2e2}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Gator Howling Moon — Series Preview</h1>
+  <div class="sub">billynFLEX · Shopify theme · not live · preview only · no secrets on this page</div>
+</header>
+
+<!-- ===== LANDING PAGE ===== -->
+<section class="section-title">1 · Landing Page (Explorer box + clickable Gator image)</section>
+
+<div class="explorer-box">
+  <div class="explorer-titlebar">
+    <span>C:\BILLYNFLEX\CATALOG</span>
+    <span style="font-size:0.75rem;opacity:0.7">BNF Catalog Bar</span>
+  </div>
+  <div class="explorer-toolbar">
+    <span class="explorer-prompt">C:\></span>
+    <input class="explorer-input" type="text" placeholder="find item...">
+    <button class="explorer-btn">search</button>
+  </div>
+  <div class="explorer-status">ready · LNK 5.25" FLOPPY</div>
+</div>
+
+<div class="gator-image-section">
+  <p style="font-size:0.8rem;color:var(--muted);margin-bottom:8px">Clickable Gator image — placed directly under the Explorer box</p>
+  <a href="#series-page" class="gator-link">
+    <img src="https://raw.githubusercontent.com/billynFLEX/billynflex-theme-next/explorer-upgrades/assets/gator-series.png"
+         alt="Gator Howling Moon — click to view the series"
+         width="560" height="560">
+  </a>
+  <div class="gator-caption">Click to view the Gator Howling Moon series</div>
+</div>
+
+<!-- ===== SERIES PAGE ===== -->
+<section id="series-page" class="section-title">2 · Destination Page (image at top, full Gator line below)</section>
+
+<div class="page-header">
+  <img src="https://raw.githubusercontent.com/billynFLEX/billynflex-theme-next/explorer-upgrades/assets/gator-series.png"
+       alt="Gator Howling Moon — three alligators howling at the moon"
+       width="700" height="700">
+  <div class="page-caption">Gator Howling Moon — GTA6 Exclusive collection</div>
+</div>
+
+<div class="product-grid">
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/1029613623692538473_2048.jpg?v=1795542620" alt="Gator Howling Moon — Unisex T-Shirt">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Unisex T-Shirt</h3>
+      <div class="product-price">$24.99 – $33.99</div>
+      <div class="product-desc">Black tee, 3 alligators howling at moon. GTA6 exclusive.</div>
+      <div><span class="variant-chip">T-Shirt</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–5XL</span><span class="variant-chip">18 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/1343887566747555844_2048.jpg?v=1795545383" alt="Gator Howling Moon — Unisex Long Sleeve">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Unisex Long Sleeve T-Shirt</h3>
+      <div class="product-price">$31.99 – $34.99</div>
+      <div class="product-desc">Long sleeve tee, 3 alligators howling at moon.</div>
+      <div><span class="variant-chip">Long Sleeve</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–2XL</span><span class="variant-chip">12 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/9967087754826714088_2048.jpg?v=1795545412" alt="Gator Howling Moon — Unisex Tank Top">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Unisex Tank Top</h3>
+      <div class="product-price">$27.99 – $30.99</div>
+      <div class="product-desc">Tank top, 3 alligators howling at moon.</div>
+      <div><span class="variant-chip">Tank Top</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–2XL</span><span class="variant-chip">12 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/7099044795980141267_2048.jpg?v=1795545429" alt="Gator Howling Moon — Women's Crop Top">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Women's Crop Top</h3>
+      <div class="product-price">$27.99 – $30.99</div>
+      <div class="product-desc">Crop top, 3 alligators howling at moon.</div>
+      <div><span class="variant-chip">Crop Top</span><span class="variant-chip">Black/White Blend</span><span class="variant-chip">S–2XL</span><span class="variant-chip">10 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/8069477794069830050_2048.jpg?v=1795545456" alt="Gator Howling Moon — Heavyweight Hoodie">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Heavyweight Hoodie</h3>
+      <div class="product-price">$43.99 – $47.99</div>
+      <div class="product-desc">Heavyweight hoodie, 3 alligators howling at moon.</div>
+      <div><span class="variant-chip">Hoodie</span><span class="variant-chip">Black/White</span><span class="variant-chip">S–5XL</span><span class="variant-chip">16 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/11221638168708268427_1200.jpg?v=1795545489" alt="Gator Howling Moon — Kiss-Cut Sticker">
+    <div class="product-body">
+      <h3>Gator Howling Moon — Kiss-Cut Sticker</h3>
+      <div class="product-price">$3.33 – $5.33</div>
+      <div class="product-desc">Kiss-cut vinyl sticker, waterproof + weatherproof.</div>
+      <div><span class="variant-chip">Sticker</span><span class="variant-chip">2″–6″</span><span class="variant-chip">Transparent/White</span><span class="variant-chip">8 variants</span></div>
+      <button class="cta">View product</button>
+    </div>
+  </div>
+</div>
+
+<div class="approval-box">
+  <h4>Approval</h4>
+  <p>Review both sections above. Section 1 = landing page with clickable Gator image under the Explorer box. Section 2 = destination page with image at top + all 6 Gator products below.</p>
+  <button class="approve">Approve</button>
+  <button class="rework">Rework</button>
+  <p style="font-size:0.75rem;color:var(--muted);margin-top:10px">Reply in chat: "approve" or "rework" with any changes needed.</p>
+</div>
+
+</body>
+</html>
