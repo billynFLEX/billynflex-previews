@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gator Howling Moon · billynFLEX</title>
+<style>
+:root{
+  --bnf-lime:#32FF6A;
+  --bnf-lime-dim:#23c74f;
+  --bnf-ink:#050505;
+  --bnf-panel:#0d0f0e;
+  --bnf-line:rgba(50,255,106,0.22);
+  --bnf-text:#e8ffee;
+  --bnf-muted:#9db8a4;
+  --bnf-glass:rgba(10,13,11,0.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:13.5px}
+body{background:var(--bnf-ink);color:var(--bnf-text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:24px;line-height:1.5}
+a{color:var(--bnf-lime);text-decoration:none}
+a:hover{color:#7dffa3;text-decoration:underline}
+h1,h2,h3{letter-spacing:-0.01em;color:var(--bnf-text)}
+.container{max-width:900px;margin:0 auto}
+.page-title{font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;color:var(--bnf-muted)}
+.sub{font-size:0.85rem;color:var(--bnf-muted);margin-bottom:24px}
+
+/* Series page header */
+.page-header{text-align:center;margin-bottom:32px}
+.page-header img{max-width:700px;width:100%;border-radius:4px;border:2px solid var(--bnf-lime);background:#000}
+.page-caption{margin-top:12px;font-size:0.9rem;color:var(--bnf-muted)}
+.return-link{margin-top:16px;display:inline-block;font-size:0.85rem;color:var(--bnf-muted)}
+.return-link:hover{color:var(--bnf-lime)}
+
+/* Section headings with lime tick (matches theme) */
+.section-heading{font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;margin:32px 0 16px;color:var(--bnf-muted);display:flex;align-items:center;gap:10px}
+.section-heading::before{content:"";width:10px;height:10px;background:var(--bnf-lime);clip-path:polygon(0 0,100% 50%,0 100%)}
+
+/* Product grid */
+.product-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:560px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.product-grid{grid-template-columns:repeat(3,1fr)}}
+.product-card{background:var(--bnf-glass);border:1px solid var(--bnf-line);border-radius:4px;overflow:hidden;backdrop-filter:blur(3px);display:flex;flex-direction:column}
+.product-img{width:100%;height:200px;object-fit:cover;background:#000}
+.product-body{padding:12px;flex:1;display:flex;flex-direction:column}
+.product-card h3{font-size:0.95rem;margin-bottom:6px;line-height:1.25}
+.product-price{font-size:1rem;font-weight:700;color:var(--bnf-lime);margin-bottom:8px}
+.product-desc{font-size:0.8rem;color:var(--bnf-muted);margin-bottom:8px;flex:1}
+.variant-chip{display:inline-block;background:rgba(50,255,106,0.1);color:var(--bnf-lime);padding:2px 6px;border-radius:4px;font-size:0.7rem;margin-right:4px;margin-bottom:4px;border:1px solid var(--bnf-line)}
+.cta{margin-top:10px;padding:8px 14px;background:var(--bnf-lime);color:#000;border:none;border-radius:2px;font-size:0.85rem;cursor:pointer;width:100%}
+.cta:hover{opacity:0.9}
+
+/* Approval */
+.approval{margin-top:32px;padding:16px;background:var(--bnf-glass);border:1px solid var(--bnf-line);border-radius:4px;backdrop-filter:blur(3px)}
+.approval h4{font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;color:var(--bnf-muted)}
+.approval p{font-size:0.8rem;color:var(--bnf-muted);margin-bottom:10px}
+button.approve{background:var(--bnf-lime);color:#000;border:none;padding:10px 18px;border-radius:2px;font-weight:bold;cursor:pointer;margin-right:8px}
+button.approve:hover{opacity:0.9}
+button.rework{background:transparent;color:#d00;border:1px solid #d00;padding:10px 18px;border-radius:2px;cursor:pointer;margin-right:8px}
+button.rework:hover{background:rgba(214,0,0,0.1)}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="page-title">Gator Howling Moon · GTA6 Exclusive</div>
+    <div class="sub">Dark theme preview — not live on Shopify</div>
+  </header>
+
+  <!-- Image at top (not clickable here) -->
+  <div class="page-header">
+    <img src="https://raw.githubusercontent.com/billynFLEX/billynflex-theme-next/explorer-upgrades/assets/gator-series.png"
+         alt="Gator Howling Moon — three alligators howling at the moon"
+         width="700" height="700">
+    <div class="page-caption">Gator Howling Moon — GTA6 Exclusive collection</div>
+    <a href="index.html" class="return-link">← Back to catalog</a>
+  </div>
+
+  <div class="section-heading">Gator Howling Moon Series</div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/1029613623692538473_2048.jpg?v=1795542620" alt="Gator Howling Moon — Unisex T-Shirt">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Unisex T-Shirt</h3>
+        <div class="product-price">$24.99 – $33.99</div>
+        <div class="product-desc">Black tee, 3 alligators howling at moon. GTA6 exclusive.</div>
+        <div><span class="variant-chip">T-Shirt</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–5XL</span><span class="variant-chip">18 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/1343887566747555844_2048.jpg?v=1795545383" alt="Gator Howling Moon — Unisex Long Sleeve">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Unisex Long Sleeve T-Shirt</h3>
+        <div class="product-price">$31.99 – $34.99</div>
+        <div class="product-desc">Long sleeve tee, 3 alligators howling at moon.</div>
+        <div><span class="variant-chip">Long Sleeve</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–2XL</span><span class="variant-chip">12 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/9967087754826714088_2048.jpg?v=1795545412" alt="Gator Howling Moon — Unisex Tank Top">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Unisex Tank Top</h3>
+        <div class="product-price">$27.99 – $30.99</div>
+        <div class="product-desc">Tank top, 3 alligators howling at moon.</div>
+        <div><span class="variant-chip">Tank Top</span><span class="variant-chip">Black/White</span><span class="variant-chip">XS–2XL</span><span class="variant-chip">12 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/7099044795980141267_2048.jpg?v=1795545429" alt="Gator Howling Moon — Women's Crop Top">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Women's Crop Top</h3>
+        <div class="product-price">$27.99 – $30.99</div>
+        <div class="product-desc">Crop top, 3 alligators howling at moon.</div>
+        <div><span class="variant-chip">Crop Top</span><span class="variant-chip">Black/White Blend</span><span class="variant-chip">S–2XL</span><span class="variant-chip">10 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/8069477794069830050_2048.jpg?v=1795545456" alt="Gator Howling Moon — Heavyweight Hoodie">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Heavyweight Hoodie</h3>
+        <div class="product-price">$43.99 – $47.99</div>
+        <div class="product-desc">Heavyweight hoodie, 3 alligators howling at moon.</div>
+        <div><span class="variant-chip">Hoodie</span><span class="variant-chip">Black/White</span><span class="variant-chip">S–5XL</span><span class="variant-chip">16 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img class="product-img" src="https://cdn.shopify.com/s/files/1/0986/0078/0072/files/11221638168708268427_1200.jpg?v=1795545489" alt="Gator Howling Moon — Kiss-Cut Sticker">
+      <div class="product-body">
+        <h3>Gator Howling Moon — Kiss-Cut Sticker</h3>
+        <div class="product-price">$3.33 – $5.33</div>
+        <div class="product-desc">Kiss-cut vinyl sticker, waterproof + weatherproof.</div>
+        <div><span class="variant-chip">Sticker</span><span class="variant-chip">2″–6″</span><span class="variant-chip">Transparent/White</span><span class="variant-chip">8 variants</span></div>
+        <button class="cta">View product</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="approval">
+    <h4>Section 2: Destination page (image at top, full Gator line below)</h4>
+    <p>Image at top (not clickable here), then all 6 Gator products below in a dark-theme grid matching the store's card style.</p>
+  </div>
+</div>
+
+</body>
+</html>

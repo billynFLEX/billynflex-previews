@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>billynFLEX · Catalog</title>
+<style>
+:root{
+  --bnf-lime:#32FF6A;
+  --bnf-lime-dim:#23c74f;
+  --bnf-ink:#050505;
+  --bnf-panel:#0d0f0e;
+  --bnf-line:rgba(50,255,106,0.22);
+  --bnf-text:#e8ffee;
+  --bnf-muted:#9db8a4;
+  --bnf-glass:rgba(10,13,11,0.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:13.5px}
+body{background:var(--bnf-ink);color:var(--bnf-text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:24px;line-height:1.5}
+a{color:var(--bnf-lime);text-decoration:none}
+a:hover{color:#7dffa3;text-decoration:underline}
+h1,h2,h3{letter-spacing:-0.01em;color:var(--bnf-text)}
+.container{max-width:900px;margin:0 auto}
+.page-title{font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;color:var(--bnf-muted)}
+.sub{font-size:0.85rem;color:var(--bnf-muted);margin-bottom:24px}
+
+/* Explorer box (matches bnf-file-explorer.liquid) */
+.explorer-box{border:1px solid var(--bnf-line);background:var(--bnf-glass);color:var(--bnf-text);font-family:'Courier New',monospace;backdrop-filter:blur(3px);margin-bottom:32px}
+.explorer-titlebar{background:rgba(0,0,0,0.4);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bnf-line)}
+.explorer-title{font-weight:bold;color:var(--bnf-lime)}
+.explorer-toolbar{padding:12px;display:flex;gap:8px;align-items:center}
+.explorer-prompt{color:var(--bnf-lime)}
+.explorer-input{border:1px solid var(--bnf-line);background:#0a0c0b;color:var(--bnf-text);padding:6px 8px;width:260px;font-family:inherit}
+.explorer-btn{background:var(--bnf-lime);color:#000;border:none;padding:6px 12px;font-family:inherit;font-weight:bold;cursor:pointer;border-radius:2px}
+.explorer-btn:hover{opacity:0.9}
+.explorer-status{padding:6px 12px;font-size:0.85rem;border-top:1px solid var(--bnf-line);color:var(--bnf-muted)}
+.explorer-custom{padding:8px 12px;border-top:1px solid var(--bnf-line);display:flex;gap:8px;align-items:center;font-size:0.85rem}
+.explorer-custom a{color:var(--bnf-lime);text-decoration:underline}
+.explorer-custom a:hover{color:#7dffa3}
+
+/* Gator image section */
+.gator-section{margin-bottom:32px;text-align:center}
+.gator-link{display:inline-block;border:3px solid var(--bnf-lime);border-radius:4px;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s}
+.gator-link:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(50,255,106,0.35)}
+.gator-link img{display:block;width:100%;max-width:520px;height:auto;background:#000}
+.gator-caption{margin-top:10px;font-size:0.9rem;color:var(--bnf-muted)}
+.return-link{margin-top:16px;display:inline-block;font-size:0.85rem;color:var(--bnf-muted)}
+.return-link:hover{color:var(--bnf-lime)}
+
+/* Approval */
+.approval{margin-top:32px;padding:16px;background:var(--bnf-glass);border:1px solid var(--bnf-line);border-radius:4px;backdrop-filter:blur(3px)}
+.approval h4{font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;color:var(--bnf-muted)}
+.approval p{font-size:0.8rem;color:var(--bnf-muted);margin-bottom:10px}
+button.approve{background:var(--bnf-lime);color:#000;border:none;padding:10px 18px;border-radius:2px;font-weight:bold;cursor:pointer;margin-right:8px}
+button.approve:hover{opacity:0.9}
+button.rework{background:transparent;color:#d00;border:1px solid #d00;padding:10px 18px;border-radius:2px;cursor:pointer;margin-right:8px}
+button.rework:hover{background:rgba(214,0,0,0.1)}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="page-title">billynFLEX · Catalog</div>
+    <div class="sub">Dark theme preview — not live on Shopify · Gator Howling Moon series</div>
+  </header>
+
+  <!-- Landing page section: Explorer box + clickable Gator image under it -->
+  <div class="explorer-box">
+    <div class="explorer-titlebar">
+      <span class="explorer-title">C:\BILLYNFLEX\CATALOG</span>
+      <span style="font-size:0.75rem;opacity:0.7">BNF Catalog Bar</span>
+    </div>
+    <div class="explorer-toolbar">
+      <span class="explorer-prompt">C:\></span>
+      <input class="explorer-input" type="text" placeholder="find item...">
+      <button class="explorer-btn">search</button>
+    </div>
+    <div class="explorer-custom">
+      <a href="/pages/custom-request">+ custom request</a>
+      <span style="color:var(--bnf-muted)">request a custom image or design</span>
+    </div>
+    <div class="explorer-status">ready · LNK 5.25" FLOPPY</div>
+  </div>
+
+  <div class="gator-section">
+    <a href="gator-series.html" class="gator-link">
+      <img src="https://raw.githubusercontent.com/billynFLEX/billynflex-theme-next/explorer-upgrades/assets/gator-series.png"
+           alt="Gator Howling Moon — click to view the series"
+           width="520" height="520">
+    </a>
+    <div class="gator-caption">Click to view the Gator Howling Moon series</div>
+  </div>
+
+  <div class="approval">
+    <h4>Section 1: Landing page (clickable image under Explorer box)</h4>
+    <p>The Gator image sits directly under the Explorer box. Clicking it opens the destination page (<code>gator-series.html</code>) below.</p>
+  </div>
+</div>
+
+</body>
+</html>
